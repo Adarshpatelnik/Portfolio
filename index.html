@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Patel | AI Engineer - Portfolio</title>
+    <meta name="description"
+        content="AI Engineer with 3+ years of experience in Generative AI, Agentic AI platforms, LangChain, LangGraph, FastAPI, and AWS cloud-native architectures.">
+    <meta name="keywords"
+        content="AI Engineer, Generative AI, LangChain, LangGraph, FastAPI, AWS, Portfolio, Adarsh Patel">
+    <meta name="author" content="Adarsh Patel">
+    <meta property="og:title" content="Adarsh Patel | AI Engineer">
+    <meta property="og:description"
+        content="AI Engineer specializing in Generative AI, Multi-Agent Orchestration, and Cloud-Native Architectures">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+            <p class="preloader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Animated Mesh Background -->
+    <div class="mesh-bg">
+        <div class="mesh-gradient mesh-1"></div>
+        <div class="mesh-gradient mesh-2"></div>
+        <div class="mesh-gradient mesh-3"></div>
+        <div class="mesh-gradient mesh-4"></div>
+    </div>
+
+    <!-- Aurora Effect -->
+    <div class="aurora">
+        <div class="aurora-beam aurora-beam-1"></div>
+        <div class="aurora-beam aurora-beam-2"></div>
+        <div class="aurora-beam aurora-beam-3"></div>
+    </div>
+
+    <!-- Floating Orbs -->
+    <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="Adarsh_Patel_Resume.pdf" download class="nav-link nav-resume-btn"><i class="fas fa-download"></i> Resume</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow-ring"></div>
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <i class="fas fa-microchip"></i> Available for opportunities
+            </div>
+            <h1 class="hero-name animate-in">
+                <span class="hero-greeting">Hello, I'm</span>
+                <span class="hero-title-name">Adarsh Patel</span>
+            </h1>
+            <div class="hero-role-wrapper animate-in">
+                <span class="hero-role-label">I build</span>
+                <span class="hero-role-typed" id="typedText"></span>
+                <span class="typed-cursor">|</span>
+            </div>
+            <p class="hero-description animate-in">
+                AI Engineer with <strong>3+ years</strong> of experience building production-grade
+                <strong>Generative AI</strong> and <strong>Agentic AI</strong> systems. Specialized in
+                multi-agent orchestration, RAG pipelines, data engineering, and cloud-native architectures.
+            </p>
+            <div class="hero-cta animate-in">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </a>
+                <a href="Adarsh_Patel_Resume.pdf" download class="btn btn-resume">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+            <div class="hero-stats animate-in">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Projects Delivered</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">AWS Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">LinkedIn Connections</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user"></i> Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm an <strong>AI Engineer</strong> passionate about building intelligent systems that transform
+                        how organizations operate. Currently at <strong>Karmada (BitTwoByte Technology)</strong>, I work across 
+                        <strong>multi-agent orchestration frameworks</strong>, <strong>data engineering</strong>, and 
+                        <strong>cloud-native deployments</strong>, bridging the gap between cutting-edge AI research and 
+                        production-grade enterprise solutions.</p>
+                    <p>My work focuses on designing <strong>Generative AI platforms</strong> using LangChain, LangGraph,
+                        and FastAPI, enabling teams to automate analytics, knowledge discovery, and business workflows.
+                        I've architected production-grade <strong>AI Agent Builder platforms</strong> that allow teams
+                        to visually create and configure AI agents without writing code. I also specialize in 
+                        <strong>Data Engineering</strong> — building robust data foundations including data collection, 
+                        processing, and advanced analytics pipelines.</p>
+                    <p>I'm experienced in <strong>Model Context Protocol (MCP)</strong>-style tool integrations,
+                        <strong>RAG pipelines</strong>, <strong>NLQ-to-SQL engines</strong>, <strong>Oracle Cloud Supply Chain Planning</strong>,
+                        and <strong>multimodal AI systems</strong>. I also contribute to open-source through the 
+                        <strong>CNCF Karmada project</strong>. I thrive in environments where I can push the boundaries 
+                        of what's possible with AI while maintaining enterprise-grade reliability.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Greater Bhopal Area, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>AI Engineer @ Karmada</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech CSE</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span>English & Hindi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & ML</h3>
+                        <p>Multi-agent orchestration, RAG, NLQ-to-SQL, vector databases, LLM integrations, NLP</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <p>FastAPI, Spring Boot, Express.js, microservices, distributed systems</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>Cloud & DevOps</h3>
+                        <p>AWS ECS/Fargate, Oracle Cloud SCP, Docker, CI/CD, CNCF contributions</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-database"></i></div>
+                        <h3>Data Engineering</h3>
+                        <p>Data pipelines, real-time reporting, advanced analytics, data processing</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>Open Source</h3>
+                        <p>CNCF Karmada project contributor — cloud-native multi-cluster management</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Frontend</h3>
+                        <p>React.js, responsive UIs, AG-Grid dashboards, micro-frontends</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code"></i> What I work with</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-brain"></i> AI & Machine Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">OpenAI GPT</span>
+                        <span class="skill-tag">Gemini</span>
+                        <span class="skill-tag">RAG Pipelines</span>
+                        <span class="skill-tag">NLQ-to-SQL</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Vector Databases</span>
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">MCP Integrations</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Diffusion Models</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Hibernate</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-laptop-code"></i> Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">AG-Grid</span>
+                        <span class="skill-tag">AG-Charts</span>
+                        <span class="skill-tag">Module Federation</span>
+                        <span class="skill-tag">Thymeleaf</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redshift</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">RDS</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">S3</span>
+                        <span class="skill-tag">ECS / Fargate</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">IAM</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">Route 53</span>
+                        <span class="skill-tag">ALB</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">CloudWatch</span>
+                        <span class="skill-tag">SNS</span>
+                        <span class="skill-tag">SQS</span>
+                        <span class="skill-tag">ElastiCache</span>
+                        <span class="skill-tag">VPC</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Nginx</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">SSO</span>
+                        <span class="skill-tag">Oracle Cloud SCP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><i class="fas fa-chart-area"></i> Data Engineering</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Pipelines</span>
+                        <span class="skill-tag">Data Processing</span>
+                        <span class="skill-tag">Real-Time Reporting</span>
+                        <span class="skill-tag">Advanced Analytics</span>
+                        <span class="skill-tag">ETL Workflows</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-briefcase"></i> Where I've worked</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <!-- BITTWOBYTE -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">AI Engineer</h3>
+                                <p class="timeline-company"><i class="fas fa-building"></i> Karmada &bull; BitTwoByte Technology
+                                    &bull; Greater Bhopal Area, India</p>
+                            </div>
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> May 2023 - Present</span>
+                        </div>
+                        <div class="exp-tabs">
+                            <button class="exp-tab active" data-tab="ai-tab">AI Integration</button>
+                            <button class="exp-tab" data-tab="data-tab">Data Engineering</button>
+                            <button class="exp-tab" data-tab="backend-tab">Backend</button>
+                            <button class="exp-tab" data-tab="frontend-tab">Frontend</button>
+                            <button class="exp-tab" data-tab="cloud-tab">Cloud & DevOps</button>
+                        </div>
+                        <div class="exp-tab-content active" id="ai-tab">
+                            <ul class="timeline-list">
+                                <li>Architected enterprise-scale <strong>Agentic AI platform</strong> for autonomous
+                                    analytics, knowledge retrieval, and conversational intelligence</li>
+                                <li>Built <strong>No-Code AI Agent Builder</strong> enabling non-technical users to
+                                    create domain-specific AI workflows</li>
+                                <li>Implemented <strong>LangGraph-based multi-agent orchestration</strong> across
+                                    analytics, document intelligence, and video intelligence</li>
+                                <li>Built <strong>NLQ-to-SQL engine</strong> with real-time visualizations, improving
+                                    data insights by <strong>70%</strong></li>
+                                <li>Developed <strong>RAG-based knowledge intelligence systems</strong> with semantic
+                                    search and contextual AI responses</li>
+                                <li>Implemented <strong>MCP-style tool integrations</strong> for secure LLM-enterprise
+                                    API interactions</li>
+                                <li>Integrated real-time <strong>voice AI</strong> using Gemini Live API and WebSocket
+                                    streaming</li>
+                                <li>Designed <strong>vector memory architecture</strong> (Pinecone + Redis), improving
+                                    accuracy by <strong>70%</strong> and reducing tokens by <strong>20%</strong></li>
+                                <li>Led <strong>Accelerated Multiagent Triage</strong> project — developing multi-agent systems from scratch to deployment</li>
+                                <li>Built <strong>AI-powered Resume-JD matching engine</strong> performing ATS-style skill gap analysis for candidate evaluation</li>
+                            </ul>
+                        </div>
+                        <div class="exp-tab-content" id="data-tab">
+                            <ul class="timeline-list">
+                                <li>Built robust <strong>data engineering foundations</strong> including data collection, processing, and advanced analytics pipelines</li>
+                                <li>Specialized in <strong>Oracle Cloud Supply Chain Planning (SCP)</strong> with Redwood UX enablement, accelerating planning cycles</li>
+                                <li>Designed scalable <strong>data models and multi-tenant database architecture</strong> using MySQL/Postgres/Redshift</li>
+                                <li>Enhanced <strong>DB performance by 60%</strong> via indexing, query optimization & Hibernate tuning</li>
+                                <li>Optimized <strong>Snowflake workflows</strong> reducing runtime by <strong>35%</strong></li>
+                                <li>Developed <strong>stored procedures & functions</strong> supporting complex transactional business logic</li>
+                            </ul>
+                        </div>
+                        <div class="exp-tab-content" id="backend-tab">
+                            <ul class="timeline-list">
+                                <li>Built scalable <strong>RESTful APIs</strong> using FastAPI, Flask, Spring Boot &
+                                    Express</li>
+                                <li>Implemented <strong>JWT auth & Microsoft SSO</strong> with Spring Security</li>
+                                <li>Designed <strong>multi-tenant RBAC architecture</strong> for enterprise clients</li>
+                                <li>Reduced <strong>API latency by 40%</strong> using Redis caching & async processing
+                                </li>
+                                <li>Optimized performance via <strong>HikariCP pooling & JVM tuning</strong>, cutting
+                                    startup by <strong>30%</strong></li>
+                            </ul>
+                        </div>
+                        <div class="exp-tab-content" id="frontend-tab">
+                            <ul class="timeline-list">
+                                <li>Developed responsive UIs using <strong>React.js, Tailwind & Bootstrap</strong></li>
+                                <li>Integrated <strong>AG-Grid & AG-Charts</strong> for KPI dashboards, reducing
+                                    reporting dependencies by <strong>70%</strong></li>
+                                <li>Configured <strong>micro-frontends with Module Federation</strong></li>
+                                <li>Created <strong>SSR dashboards</strong> using Thymeleaf for real-time analytics</li>
+                            </ul>
+                        </div>
+                        <div class="exp-tab-content" id="cloud-tab">
+                            <ul class="timeline-list">
+                                <li>Designed complete <strong>AWS cloud infrastructure</strong> (networking, compute,
+                                    storage, load balancing)</li>
+                                <li>Containerized services with <strong>Docker</strong> and deployed on <strong>AWS
+                                        ECS/Fargate</strong></li>
+                                <li>Implemented <strong>SNS & SQS</strong> for asynchronous event-driven architectures, enabling scalable multi-agent job processing</li>
+                                <li>Built <strong>event-driven workflows</strong> using SNS/SQS for AI agent task distribution and real-time notifications</li>
+                                <li>Deployed frontends on <strong>S3 + CloudFront CDN</strong></li>
+                                <li>Built <strong>CI/CD pipelines</strong> with GitHub Actions</li>
+                                <li>Improved <strong>recovery speed by 50%</strong> with monitoring automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- TECHLOZY -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Developer</h3>
+                                <p class="timeline-company"><i class="fas fa-building"></i> TECHLOZY &bull; Rewa, India
+                                </p>
+                            </div>
+                            <span class="timeline-date"><i class="fas fa-calendar"></i> Oct 2022 - Mar 2023</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed full-stack applications using <strong>React.js, Node.js & Express</strong>
+                            </li>
+                            <li>Built REST APIs improving backend efficiency by <strong>25%</strong></li>
+                            <li>Integrated <strong>MongoDB & PostgreSQL</strong> with optimized schemas</li>
+                            <li>Deployed cloud applications on <strong>AWS EC2, S3 & Docker</strong> with CI/CD</li>
+                            <li>Collaborated in <strong>Agile sprints & code reviews</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-diagram-project"></i> What I've built</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <span class="project-badge">Featured</span>
+                    </div>
+                    <h3 class="project-title">AI Multi-Agent Automation Platform</h3>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> Team Lead / Full Stack Developer</p>
+                    <p class="project-desc">Production-grade multi-agent AI platform enabling organizations to automate
+                        analytics, knowledge discovery, and enterprise workflows. Features a No-Code Agent Builder for
+                        NLQ-to-SQL, RAG knowledge systems, video intelligence, and multimodal AI.</p>
+                    <div class="project-highlights">
+                        <div class="project-metric"><i class="fas fa-chart-line"></i> 75% faster reporting</div>
+                        <div class="project-metric"><i class="fas fa-search"></i> 80% faster doc search</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>React</span><span>FastAPI</span><span>OpenAI</span><span>Gemini</span><span>LangChain</span><span>LangGraph</span><span>ElevenLabs TTS</span><span>Pinecone</span><span>Redis</span><span>PostgreSQL</span><span>Microsoft SSO</span><span>RBAC</span><span>AWS</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-flask"></i></div>
+                    </div>
+                    <h3 class="project-title">Laboratory Information System</h3>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> Backend Developer</p>
+                    <p class="project-desc">Healthcare-grade LIS with REST APIs for lab operations, patient handling,
+                        and automated reporting workflows. Achieved 99.9% system uptime with production monitoring and
+                        incident response.</p>
+                    <div class="project-highlights">
+                        <div class="project-metric"><i class="fas fa-server"></i> 99.9% uptime</div>
+                    </div>
+                    <div class="project-tech">
+                        <span>Java</span><span>Spring
+                            Boot</span><span>Thymeleaf</span><span>MySQL</span><span>Hibernate</span><span>AWS</span>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-school"></i></div>
+                    </div>
+                    <h3 class="project-title">School Management System ERP</h3>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> Full Stack Developer</p>
+                    <p class="project-desc">B2B multi-tenant microservices ERP with JWT authentication, role-based
+                        dashboards, and containerized deployment architecture using Module Federation for independently
+                        deployable UI modules.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Docker</span><span>ECS</span><span>Nginx</span>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-chart-bar"></i></div>
+                    </div>
+                    <h3 class="project-title">Financial Dashboard - NFS</h3>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> Full Stack Developer</p>
+                    <p class="project-desc">Real-time financial dashboards for transaction analytics and risk monitoring
+                        with secure, high-performance backend powering interactive insights with RBAC and optimized
+                        queries.</p>
+                    <div class="project-tech">
+                        <span>React</span><span>FastAPI</span><span>AG Grid</span><span>AG
+                            Charts</span><span>PostgreSQL</span><span>AWS</span>
+                    </div>
+                </div>
+                <!-- Project 5 - Open Source -->
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon"><i class="fas fa-code-branch"></i></div>
+                        <span class="project-badge">Open Source</span>
+                    </div>
+                    <h3 class="project-title">CNCF Karmada — Certificate Standardization</h3>
+                    <p class="project-role"><i class="fas fa-user-tie"></i> Open Source Contributor (2025 Term 1)</p>
+                    <p class="project-desc">Contributed to the CNCF Karmada project focused on self-signed certificate content standardization, improving cloud-native multi-cluster Kubernetes management infrastructure and security practices.</p>
+                    <div class="project-tech">
+                        <span>CNCF</span><span>Kubernetes</span><span>Go</span><span>Cloud Native</span><span>Certificate Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> My credentials</span>
+                <h2 class="section-title">Education & Certifications</h2>
+            </div>
+
+            <!-- Education Sub-section -->
+            <div class="credentials-block">
+                <h3 class="credentials-label"><i class="fas fa-university"></i> Education</h3>
+                <div class="edu-card-premium">
+                    <div class="edu-card-left">
+                        <div class="edu-icon-large"><i class="fas fa-graduation-cap"></i></div>
+                    </div>
+                    <div class="edu-card-right">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="edu-field">Computer Science Engineering</p>
+                        <p class="edu-school"><i class="fas fa-building-columns"></i> Rajiv Gandhi Prodyogiki Vishwavidyalaya (RGPV), Bhopal, MP</p>
+                        <div class="edu-meta">
+                            <span class="edu-year"><i class="fas fa-calendar"></i> 2023</span>
+                            <span class="edu-degree-tag"><i class="fas fa-award"></i> B.Tech</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications Sub-section -->
+            <div class="credentials-block">
+                <h3 class="credentials-label"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card-premium">
+                        <div class="cert-ribbon">Verified</div>
+                        <div class="cert-badge-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Solutions Architect</h3>
+                            <span class="cert-level-badge cert-level-associate">Associate</span>
+                            <p class="cert-issuer"><i class="fas fa-shield-halved"></i> Amazon Web Services</p>
+                        </div>
+                        <div class="cert-shine"></div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card-premium">
+                        <div class="cert-ribbon">Verified</div>
+                        <div class="cert-badge-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="cert-info">
+                            <h3>AWS Certified Cloud Practitioner</h3>
+                            <span class="cert-level-badge cert-level-foundational">Foundational</span>
+                            <p class="cert-issuer"><i class="fas fa-shield-halved"></i> Amazon Web Services</p>
+                        </div>
+                        <div class="cert-shine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Let's connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">I'm always open to discussing new opportunities, interesting projects, or
+                    just having a chat about AI and technology.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <a href="mailto:eng.adarshpatel@gmail.com" class="contact-card" id="contact-email">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>eng.adarshpatel@gmail.com</p>
+                    </a>
+                    <a href="tel:+916267597624" class="contact-card" id="contact-phone">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+91-6267597624</p>
+                    </a>
+                    <a href="https://linkedin.com/in/adarshpatelaiengineer" target="_blank" class="contact-card"
+                        id="contact-linkedin">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>adarshpatelaiengineer</p>
+                    </a>
+                    <div class="contact-card" id="contact-location">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Location</h3>
+                        <p>Greater Bhopal Area, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>AP<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Adarsh Patel &copy; 2026</p>
+                <div class="footer-socials">
+                    <a href="mailto:eng.adarshpatel@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/adarshpatelaiengineer" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="tel:+916267597624" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
